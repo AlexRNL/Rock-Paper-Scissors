@@ -1,10 +1,10 @@
 /************************************************************/
 /*                         main.h                           */
-/*   Ce fichier contient inclus toutes les bibliothèques    */
+/*   Ce fichier contient inclus toutes les bibliothï¿½ques    */
 /* standard dont on aura besoin lors du jeu ainsi que les   */
 /* prototypes des fonctions.                                */
-/*   Auteur : Alex Barféty                                  */
-/*   Date de création : 27/12/2007                          */
+/*   Auteur : Alex BarfÃ©ty                                  */
+/*   Date de crÃ©ation : 27/12/2007                          */
 /*   Date de modification : 10/04/2008                      */
 /*                                                          */
 /************************************************************/
@@ -20,6 +20,6 @@
 
 //       PROTOTYPES
 char int_art (void) ;
-void print_element (char element, char elt[11]) ;
+void print_element (char element, char elt[12]) ;
 
 #endif

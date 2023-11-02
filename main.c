@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	/* e <=> 'é' ; ee <=> 'è' ; a <=> 'ê'*/
 
 	int nb_manches, nb_manches_tot, nb_manchesJ, nb_manchesO ;
-	char choix, elementJ, elementO, match, eltJ[11], eltO[11] ;
+	char choix, elementJ, elementO, match, eltJ[12], eltO[12] ;
 
 	//     INITIALISATION
 
@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
 			else {match = 'J' ;} //Si le joueur gagne.
 			print_element(elementO, eltO) ; //On écrit dans une chaîne de caractères le nom complet de l'élément.
 			print_element(elementJ, eltJ) ;
-			system("CLS") ; //Affichage du résumé de la manche en cours.
+			CLEAR ; //Affichage du résumé de la manche en cours.
 			printf("\t\t\tRapport de combat :") ;
 			printf("\n\n\n\tVous avez jou%c : %s.\n\n\tL'ordinateur a d%ccid%c d'opposer %s.", e, eltJ, e, e, eltO) ;
 			printf("\n\n") ;
@@ -146,8 +146,8 @@ char int_art (void)
 		return element ;
 }
 
-//Fonction qui écrit le nom de l'élément correspondant dasn une chaîne de caractères :
-void print_element (char element, char elt[11])
+//Fonction qui écrit le nom de l'élément correspondant dans une chaîne de caractères :
+void print_element (char element, char elt[12])
 {
 	switch (element)
 	{
