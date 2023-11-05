@@ -20,4 +20,4 @@ build:
 test:
   stage: test
   script:
-    - $([[ -e "ci-build/Rock_Paper_Scissors" ]] = 0)
+    - test -x "ci-build/Rock_Paper_Scissors"
