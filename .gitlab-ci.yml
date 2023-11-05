@@ -1,0 +1,23 @@
+image: gcc
+
+# Build step, with CMake
+build:
+  stage: build
+  before_script:
+    - apt update && apt -y install make make cmake
+  script:
+    - mkdir ci-build
+    - cd ci-build
+    - cmake .. && cmake --build . && make
+  artifacts:
+    paths:
+      - ci-build/Rock_Paper_Scissors
+  cache:
+    paths:
+      - "*.o"
+
+# Test stage (TBD)
+test:
+  stage: test
+  script:
+    - $([[ -e "ci-build/Rock_Paper_Scissors" ]] = 0)
