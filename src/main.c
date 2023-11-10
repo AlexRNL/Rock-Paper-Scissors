@@ -30,7 +30,7 @@
 /*Programme qui permet de jouer à pierre feuille ciseaux contre l'ordinateur.
 -sans triche-*/
 
-int main(int argc, char *argv[])
+int main(void)
 {
 	//     DECLARATION DES VARIABLES ET DES CONSTANTES
 
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
 	//     INITIALISATION
 
-	srand(time(NULL)) ;
+	srand((unsigned int) time(NULL)) ;
 
 	//     ON COMMENCE A JOUER
 	do
